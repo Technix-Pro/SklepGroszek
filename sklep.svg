@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%" role="img" aria-label="Wizualizacja sklepu Groszek w Kowarach przy ul. Pocztowej 6">
+  <defs>
+    <!-- Background & atmosphere gradients -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1a12"/>
+      <stop offset="60%" stop-color="#122e20"/>
+      <stop offset="100%" stop-color="#183d2b"/>
+    </linearGradient>
+
+    <linearGradient id="buildingGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#142c1f"/>
+      <stop offset="50%" stop-color="#193727"/>
+      <stop offset="100%" stop-color="#11271b"/>
+    </linearGradient>
+
+    <linearGradient id="facadeTrim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#244b36"/>
+      <stop offset="100%" stop-color="#163424"/>
+    </linearGradient>
+
+    <!-- Groszek sign gradient -->
+    <linearGradient id="signGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b422d"/>
+      <stop offset="100%" stop-color="#0f291b"/>
+    </linearGradient>
+
+    <!-- Warm interior light -->
+    <radialGradient id="interiorWarmth" cx="50%" cy="60%" r="65%">
+      <stop offset="0%" stop-color="#fff8db" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#fed668" stop-opacity="0.8"/>
+      <stop offset="85%" stop-color="#e5a93b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#2d4a34" stop-opacity="0.4"/>
+    </radialGradient>
+
+    <linearGradient id="glassReflection" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="65%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <linearGradient id="pavementGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#25352b"/>
+      <stop offset="40%" stop-color="#1b2820"/>
+      <stop offset="100%" stop-color="#0f1813"/>
+    </linearGradient>
+
+    <!-- Soft shadow filter -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="800" height="520" fill="url(#skyGrad)"/>
+
+  <!-- Subtle ambient stars/lights in background -->
+  <circle cx="95" cy="45" r="1.5" fill="#f4d346" opacity="0.4"/>
+  <circle cx="210" cy="30" r="1" fill="#ffffff" opacity="0.5"/>
+  <circle cx="680" cy="50" r="1.5" fill="#f4d346" opacity="0.4"/>
+  <circle cx="730" cy="35" r="1" fill="#ffffff" opacity="0.6"/>
+
+  <!-- Building exterior -->
+  <rect x="70" y="80" width="660" height="340" rx="6" fill="url(#buildingGrad)" filter="url(#dropShadow)"/>
+
+  <!-- Top cornice / architectural molding -->
+  <rect x="55" y="72" width="690" height="16" rx="3" fill="url(#facadeTrim)"/>
+  <rect x="65" y="88" width="670" height="6" fill="#0d2016"/>
+
+  <!-- Main Groszek Signboard -->
+  <g transform="translate(140, 102)">
+    <rect x="0" y="0" width="520" height="88" rx="10" fill="url(#signGrad)" stroke="#f4d346" stroke-width="2.5" filter="url(#dropShadow)"/>
+    <!-- Yellow decorative inner border -->
+    <rect x="6" y="6" width="508" height="76" rx="7" fill="none" stroke="#f4d346" stroke-opacity="0.3" stroke-width="1"/>
+
+    <!-- Red dot -->
+    <circle cx="120" cy="44" r="19" fill="#e43d35" filter="url(#softGlow)"/>
+    <circle cx="114" cy="38" r="5" fill="#ff7c75" opacity="0.7"/>
+
+    <!-- Yellow Groszek Wordmark -->
+    <text x="155" y="55" font-family="'Segoe UI', Arial, sans-serif" font-weight="900" font-size="44" fill="#f4d346" letter-spacing="-1.5">Groszek</text>
+
+    <!-- Subtitle: Kowary • Pocztowa 6 -->
+    <text x="355" y="42" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="13" fill="#ffffff" letter-spacing="1.5">KOWARY</text>
+    <text x="355" y="58" font-family="'Segoe UI', Arial, sans-serif" font-weight="500" font-size="11" fill="#b8c6b9" letter-spacing="0.8">ul. Pocztowa 6</text>
+  </g>
+
+  <!-- Awning over entrance & windows -->
+  <g transform="translate(100, 195)">
+    <!-- Awning canopy -->
+    <path d="M 0 15 L 20 0 L 580 0 L 600 15 L 600 35 Q 300 45 0 35 Z" fill="#1b4730" stroke="#f4d346" stroke-width="1.5"/>
+    <!-- Awning stripes -->
+    <path d="M 40 0 L 45 34 L 85 35 L 80 0 Z" fill="#24593d" opacity="0.6"/>
+    <path d="M 120 0 L 125 36 L 165 37 L 160 0 Z" fill="#24593d" opacity="0.6"/>
+    <path d="M 200 0 L 205 38 L 245 39 L 240 0 Z" fill="#24593d" opacity="0.6"/>
+    <path d="M 355 0 L 355 39 L 395 38 L 395 0 Z" fill="#24593d" opacity="0.6"/>
+    <path d="M 435 0 L 435 37 L 475 36 L 475 0 Z" fill="#24593d" opacity="0.6"/>
+    <path d="M 515 0 L 515 35 L 555 34 L 555 0 Z" fill="#24593d" opacity="0.6"/>
+    <!-- Scalloped bottom trim -->
+    <line x1="0" y1="35" x2="600" y2="35" stroke="#f4d346" stroke-width="2"/>
+  </g>
+
+  <!-- Left Large Display Window (Fresh Bread & Groceries) -->
+  <g transform="translate(115, 240)">
+    <!-- Window Frame -->
+    <rect x="0" y="0" width="220" height="160" rx="4" fill="#0c1d14" stroke="#254a36" stroke-width="4"/>
+    <!-- Interior Warm Light -->
+    <rect x="4" y="4" width="212" height="152" fill="url(#interiorWarmth)"/>
+
+    <!-- Display shelves & products silhouette -->
+    <!-- Shelf 1 - Bread & Bakery -->
+    <rect x="14" y="65" width="192" height="6" fill="#8c5828" rx="2"/>
+    <!-- Bread loaves silhouettes -->
+    <ellipse cx="40" cy="55" rx="16" ry="10" fill="#d99b43"/>
+    <ellipse cx="75" cy="54" rx="14" ry="11" fill="#c48532"/>
+    <ellipse cx="110" cy="56" rx="18" ry="9" fill="#e0a955"/>
+    <ellipse cx="150" cy="53" rx="17" ry="11" fill="#b8782a"/>
+    <ellipse cx="185" cy="55" rx="12" ry="9" fill="#d99b43"/>
+
+    <!-- Shelf 2 - Dairy & Fresh Goods -->
+    <rect x="14" y="115" width="192" height="6" fill="#8c5828" rx="2"/>
+    <!-- Milk bottles & packages -->
+    <rect x="25" y="85" width="14" height="28" rx="2" fill="#ffffff" opacity="0.85"/>
+    <rect x="44" y="88" width="16" height="25" rx="2" fill="#ffd15c" opacity="0.85"/>
+    <rect x="65" y="83" width="15" height="30" rx="2" fill="#ffffff" opacity="0.85"/>
+    <rect x="85" y="90" width="18" height="23" rx="2" fill="#69b878" opacity="0.85"/>
+    <rect x="110" y="86" width="16" height="27" rx="2" fill="#f27d52" opacity="0.85"/>
+    <rect x="132" y="84" width="15" height="29" rx="2" fill="#ffffff" opacity="0.85"/>
+    <rect x="153" y="89" width="17" height="24" rx="2" fill="#ffd15c" opacity="0.85"/>
+    <rect x="176" y="85" width="14" height="28" rx="2" fill="#ffffff" opacity="0.85"/>
+
+    <!-- Glass Reflection Diagonal -->
+    <polygon points="4,4 70,4 20,156 4,156" fill="url(#glassReflection)"/>
+    <polygon points="90,4 160,4 70,156 4,156" fill="url(#glassReflection)" opacity="0.6"/>
+
+    <!-- Window badge -->
+    <rect x="40" y="130" width="140" height="20" rx="4" fill="#0f291b" opacity="0.9"/>
+    <text x="110" y="144" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="9.5" fill="#f4d346" text-anchor="middle" letter-spacing="0.5">ŚWIEŻE PIECZYWO I DOSTAWY</text>
+  </g>
+
+  <!-- Central Store Entrance Doors -->
+  <g transform="translate(355, 230)">
+    <!-- Outer door frame -->
+    <rect x="0" y="0" width="130" height="175" rx="3" fill="#132b1f" stroke="#2b553e" stroke-width="4"/>
+    <!-- Glass panels with interior warm light -->
+    <rect x="8" y="10" width="52" height="155" fill="url(#interiorWarmth)" stroke="#1a3d2b" stroke-width="2"/>
+    <rect x="68" y="10" width="52" height="155" fill="url(#interiorWarmth)" stroke="#1a3d2b" stroke-width="2"/>
+
+    <!-- Glass Reflections -->
+    <polygon points="8,10 40,10 15,165 8,165" fill="url(#glassReflection)"/>
+    <polygon points="68,10 100,10 75,165 68,165" fill="url(#glassReflection)"/>
+
+    <!-- Door Handles -->
+    <rect x="52" y="80" width="4" height="30" rx="2" fill="#f4d346"/>
+    <rect x="72" y="80" width="4" height="30" rx="2" fill="#f4d346"/>
+
+    <!-- Entrance Sign / Welcome decal -->
+    <rect x="22" y="22" width="84" height="26" rx="4" fill="#0f291b" stroke="#f4d346" stroke-width="1"/>
+    <text x="64" y="38" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="10.5" fill="#f4d346" text-anchor="middle">ZAPRASZAMY</text>
+    <text x="64" y="45" font-family="'Segoe UI', Arial, sans-serif" font-weight="600" font-size="6.5" fill="#ffffff" text-anchor="middle">06:00 – 21:00</text>
+  </g>
+
+  <!-- Right Large Display Window (Beverages, Tobacco & Goods) -->
+  <g transform="translate(505, 240)">
+    <!-- Window Frame -->
+    <rect x="0" y="0" width="180" height="160" rx="4" fill="#0c1d14" stroke="#254a36" stroke-width="4"/>
+    <!-- Interior Warm Light -->
+    <rect x="4" y="4" width="172" height="152" fill="url(#interiorWarmth)"/>
+
+    <!-- Display Shelves -->
+    <!-- Shelf 1: Beverages & Spirits -->
+    <rect x="12" y="65" width="156" height="6" fill="#8c5828" rx="2"/>
+    <!-- Bottles silhouette -->
+    <rect x="20" y="36" width="9" height="28" rx="1" fill="#4d8256"/>
+    <rect x="33" y="32" width="10" height="32" rx="1" fill="#8f4a32"/>
+    <rect x="47" y="35" width="9" height="29" rx="1" fill="#3b5998"/>
+    <rect x="60" y="30" width="11" height="34" rx="1" fill="#a87c28"/>
+    <rect x="75" y="34" width="9" height="30" rx="1" fill="#4d8256"/>
+    <rect x="88" y="32" width="10" height="32" rx="1" fill="#8f4a32"/>
+    <rect x="102" y="36" width="9" height="28" rx="1" fill="#a87c28"/>
+    <rect x="115" y="31" width="11" height="33" rx="1" fill="#3b5998"/>
+    <rect x="130" y="35" width="9" height="29" rx="1" fill="#4d8256"/>
+    <rect x="143" y="33" width="10" height="31" rx="1" fill="#8f4a32"/>
+
+    <!-- Shelf 2: Packaged Goods & Tobacco accessories -->
+    <rect x="12" y="115" width="156" height="6" fill="#8c5828" rx="2"/>
+    <rect x="22" y="90" width="18" height="23" rx="2" fill="#c43b3b" opacity="0.9"/>
+    <rect x="44" y="92" width="18" height="21" rx="2" fill="#396bb0" opacity="0.9"/>
+    <rect x="66" y="88" width="18" height="25" rx="2" fill="#d9a836" opacity="0.9"/>
+    <rect x="88" y="91" width="18" height="22" rx="2" fill="#2d7d4f" opacity="0.9"/>
+    <rect x="110" y="89" width="18" height="24" rx="2" fill="#8c47a1" opacity="0.9"/>
+    <rect x="132" y="93" width="18" height="20" rx="2" fill="#c43b3b" opacity="0.9"/>
+
+    <!-- Glass Reflection -->
+    <polygon points="4,4 55,4 15,156 4,156" fill="url(#glassReflection)"/>
+    <polygon points="75,4 130,4 60,156 4,156" fill="url(#glassReflection)" opacity="0.5"/>
+
+    <!-- Window badge -->
+    <rect x="25" y="130" width="130" height="20" rx="4" fill="#0f291b" opacity="0.9"/>
+    <text x="90" y="144" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="9" fill="#f4d346" text-anchor="middle" letter-spacing="0.5">ALKOHOLE I TYTOŃ</text>
+  </g>
+
+  <!-- Pavement / Sidewalk ground -->
+  <rect x="0" y="415" width="800" height="105" fill="url(#pavementGrad)"/>
+  <line x1="0" y1="415" x2="800" y2="415" stroke="#375543" stroke-width="3"/>
+
+  <!-- Pavement stone tiles lines -->
+  <line x1="120" y1="416" x2="80" y2="520" stroke="#16261c" stroke-width="1.5"/>
+  <line x1="260" y1="416" x2="220" y2="520" stroke="#16261c" stroke-width="1.5"/>
+  <line x1="400" y1="416" x2="360" y2="520" stroke="#16261c" stroke-width="1.5"/>
+  <line x1="540" y1="416" x2="500" y2="520" stroke="#16261c" stroke-width="1.5"/>
+  <line x1="680" y1="416" x2="640" y2="520" stroke="#16261c" stroke-width="1.5"/>
+  <line x1="0" y1="465" x2="800" y2="465" stroke="#16261c" stroke-width="1"/>
+
+  <!-- Entrance Steps / Ramp -->
+  <polygon points="340,418 490,418 510,432 320,432" fill="#2d4536"/>
+  <polygon points="320,432 510,432 525,446 305,446" fill="#24382c"/>
+
+  <!-- Warm Light Spill onto Pavement -->
+  <ellipse cx="415" cy="435" rx="140" ry="25" fill="#f4d346" opacity="0.16"/>
+  <ellipse cx="225" cy="430" rx="90" ry="18" fill="#f4d346" opacity="0.12"/>
+  <ellipse cx="595" cy="430" rx="90" ry="18" fill="#f4d346" opacity="0.12"/>
+
+  <!-- Outdoor Decorative Plant Pots on sides -->
+  <g transform="translate(85, 385)">
+    <path d="M 0 10 L 4 30 L 22 30 L 26 10 Z" fill="#8f4a32"/>
+    <ellipse cx="13" cy="8" rx="14" ry="10" fill="#27613b"/>
+    <ellipse cx="13" cy="4" rx="10" ry="7" fill="#357d4e"/>
+  </g>
+  <g transform="translate(695, 385)">
+    <path d="M 0 10 L 4 30 L 22 30 L 26 10 Z" fill="#8f4a32"/>
+    <ellipse cx="13" cy="8" rx="14" ry="10" fill="#27613b"/>
+    <ellipse cx="13" cy="4" rx="10" ry="7" fill="#357d4e"/>
+  </g>
+</svg>
