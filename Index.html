@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Oficjalna strona Sklepu Groszek w Kowarach przy ul. Pocztowej 6. Codzienne dostawy produktów, świeże pieczywo, alkohole i wyroby tytoniowe.">
-    <title>Sklep Groszek — Kowary, Pocztowa 6</title>
+    <meta name="description" content="Oficjalna strona sklepu Groszek w Kowarach — świeże pieczywo, dostawy produktów, alkohole i wyroby tytoniowe.">
+    <title>Groszek — Kowary</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,316 +16,120 @@
             <span class="logo-text">Groszek</span>
         </a>
 
-        <div class="header-actions">
-            <details class="menu">
-                <summary aria-haspopup="true" aria-expanded="false">
-                    <span>Menu</span>
-                    <span class="menu-icon" aria-hidden="true">☰</span>
-                </summary>
-                <nav class="main-nav" aria-label="Nawigacja główna">
-                    <a href="#o-nas">O nas</a>
-                    <a href="#kontakt">Kontakt</a>
-                    <a href="#lokalizacja">Lokalizacja</a>
-                </nav>
-            </details>
-        </div>
+        <details class="menu">
+            <summary>Menu <span aria-hidden="true">☰</span></summary>
+            <nav class="main-nav" aria-label="Nawigacja główna">
+                <a href="#o-nas">O nas</a>
+                <a href="#kontakt">Kontakt</a>
+                <a href="#lokalizacja">Lokalizacja</a>
+            </nav>
+        </details>
     </header>
 
     <main id="start" class="content-container">
-        <!-- Hero Section -->
-        <section class="hero-banner" aria-labelledby="hero-title">
+        <section class="hero-banner">
             <div class="hero-content">
-                <p class="eyebrow">Zawsze blisko • Zawsze po drodze</p>
-                <h1 id="hero-title">Groszek — Twój codzienny sklep<br><span>w sercu Kowar</span></h1>
-                <p class="hero-lead">
-                    Zapewniamy szybkie i wygodne zakupy każdego dnia. Oferujemy regularne dostarczanie produktów, pachnące świeże pieczywo, szeroki wybór alkoholi oraz wyrobów tytoniowych.
+                <p class="eyebrow">Zawsze blisko • zawsze po drodze</p>
+                <h1>Groszek — Twój sklep<br><span>na codzienne zakupy</span></h1>
+                <p>
+                    Zapewniamy dostarczanie produktów, świeże pieczywo, alkohole oraz wyroby tytoniowe.
+                    Szybko, wygodnie i lokalnie — wszystko, czego potrzebujesz na co dzień.
                 </p>
-
-                <!-- 4 Key Pillars in Hero -->
-                <div class="hero-highlights" aria-label="Główne atuty sklepu">
-                    <div class="highlight-pill">
-                        <span class="highlight-icon" aria-hidden="true">🚚</span>
-                        <div class="highlight-text">
-                            <strong>Dostarczanie produktów</strong>
-                            <small>Świeże dostawy każdego dnia</small>
-                        </div>
-                    </div>
-                    <div class="highlight-pill">
-                        <span class="highlight-icon" aria-hidden="true">🥖</span>
-                        <div class="highlight-text">
-                            <strong>Świeże pieczywo</strong>
-                            <small>Z lokalnych piekarni od rana</small>
-                        </div>
-                    </div>
-                    <div class="highlight-pill">
-                        <span class="highlight-icon" aria-hidden="true">🍷</span>
-                        <div class="highlight-text">
-                            <strong>Alkohole i napoje</strong>
-                            <small>Szeroki asortyment na każdą okazję</small>
-                        </div>
-                    </div>
-                    <div class="highlight-pill">
-                        <span class="highlight-icon" aria-hidden="true">💨</span>
-                        <div class="highlight-text">
-                            <strong>Wyroby tytoniowe</strong>
-                            <small>Pełna oferta i akcesoria</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-cta-group">
-                    <a class="button button-primary" href="#oferta">Poznaj naszą ofertę <span aria-hidden="true">↓</span></a>
-                    <a class="button button-secondary" href="#lokalizacja">Zobacz lokalizację <span aria-hidden="true">📍</span></a>
-                </div>
+                <a class="button" href="#oferta">Zobacz ofertę <span aria-hidden="true">↓</span></a>
             </div>
 
-            <!-- Store Visual Image Card -->
-            <div class="hero-visual">
-                <figure class="store-image-card">
-                    <picture>
-                        <source srcset="image.jpg" type="image/jpeg">
-                        <img src="sklep.svg" alt="Witryna sklepu Groszek w Kowarach przy ul. Pocztowej 6" class="store-photo" width="700" height="455" loading="eager" onerror="if(!this.src.endsWith('sklep.svg')){this.src='sklep.svg';}">
-                    </picture>
-                    <figcaption class="store-caption">
-                        <div class="caption-header">
-                            <span class="caption-dot" aria-hidden="true"></span>
-                            <span class="caption-badge">Kowary, ul. Pocztowa 6</span>
-                        </div>
-                        <p class="caption-hours">Otwarte od 06:00 do 21:00 • Zapraszamy!</p>
-                    </figcaption>
-                </figure>
-            </div>
+            <figure class="hero-image">
+                <img src="image.jpg" alt="Wejście do sklepu Groszek w Kowarach">
+            </figure>
         </section>
 
-        <!-- About Us Section -->
-        <section id="o-nas" class="info-section about-section" aria-labelledby="about-title">
+        <section id="o-nas" class="info-section about-section">
             <div class="section-heading">
-                <p class="eyebrow">Poznaj nas bliżej</p>
-                <h2 id="about-title">Lokalny sklep z tradycją<br>i nowoczesną wygodą</h2>
+                <p class="eyebrow">O nas</p>
+                <h2>Lokalny sklep z codzienną wygodą</h2>
             </div>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        Sklep <strong>Groszek w Kowarach</strong> to Twoje codzienne miejsce na szybkie, udane i komfortowe zakupy. Dbamy o to, aby nasi Klienci zawsze znaleźli na półkach świeże produkty spożywcze, chrupiące pieczywo oraz szeroki asortyment artykułów pierwszej potrzeby.
-                    </p>
-                    <p>
-                        Stawiamy na serdeczną obsługę, stałą dostępność asortymentu i lokalny charakter. Niezależnie od tego, czy wpadasz po poranne bułki, szybki obiad, czy zakupy na weekendowe spotkanie — u nas zawsze jesteś mile widziany.
-                    </p>
-                </div>
-                <div class="about-features">
-                    <div class="feature-item">
-                        <span class="feature-check" aria-hidden="true">✓</span>
-                        <div>
-                            <h3>Świeżość i jakość</h3>
-                            <p>Codzienny nadzór nad terminami i najwyższą jakością oferowanych artykułów.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-check" aria-hidden="true">✓</span>
-                        <div>
-                            <h3>Wszystko pod ręką</h3>
-                            <p>Od artykułów spożywczych i nabiału, po chemię domową, napoje i prasę.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-check" aria-hidden="true">✓</span>
-                        <div>
-                            <h3>Dogodna lokalizacja</h3>
-                            <p>Ścisłe centrum Kowar z wygodnym podejściem i dogodnym parkingiem.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p>
+                Groszek to sklep osiedlowy dla mieszkańców i gości Kowar. Stawiamy na szybkie zakupy,
+                świeżość produktów i przyjazną obsługę. Dbamy o to, by najważniejsze produkty były
+                zawsze pod ręką.
+            </p>
         </section>
 
-        <!-- Offer Section -->
-        <section id="oferta" class="info-section offer-section" aria-labelledby="offer-title">
-            <div class="section-heading text-center">
-                <p class="eyebrow">Co znajdziesz na naszych półkach?</p>
-                <h2 id="offer-title">Kompleksowa oferta dla Ciebie</h2>
-                <p class="section-lead">Starannie dobrany asortyment produktów spożywczych i przemysłowych na każdą porę dnia.</p>
+        <section id="oferta" class="info-section offer-section">
+            <div class="section-heading">
+                <p class="eyebrow">Oferta</p>
+                <h2>Co znajdziesz u nas?</h2>
             </div>
 
             <div class="product-categories">
                 <article class="category-card">
-                    <div class="card-icon" aria-hidden="true">🚚</div>
                     <h3>Dostarczanie produktów</h3>
-                    <p>
-                        Dbamy o regularne, codzienne dostawy towarów od sprawdzonych producentów i hurtowni. Dzięki temu świeże warzywa, owoce, nabiał, mięsa i wędliny trafiają na nasze półki bez opóźnień.
-                    </p>
-                    <ul class="category-list">
-                        <li>Codzienne świeże dostawy</li>
-                        <li>Nabiał, wędliny i garmażerka</li>
-                        <li>Podstawowe artykuły spożywcze</li>
-                    </ul>
+                    <p>Pomagamy w codziennych zakupach i zapewniamy dostęp do podstawowych artykułów spożywczych.</p>
                 </article>
 
                 <article class="category-card">
-                    <div class="card-icon" aria-hidden="true">🥖</div>
                     <h3>Świeże pieczywo</h3>
-                    <p>
-                        Każdego poranka w naszym sklepie unosi się zapach świeżo pieczonego chleba i chrupiących bułek. Współpracujemy z cenionymi piekarniami, dostarczając pieczywo najwyższej próby.
-                    </p>
-                    <ul class="category-list">
-                        <li>Tradycyjny chleb na zakwasie</li>
-                        <li>Chrupiące bułki i bagietki</li>
-                        <li>Słodkie drożdżówki i ciastka</li>
-                    </ul>
+                    <p>Codziennie dostępne pieczywo, idealne na śniadanie, kolację i szybkie przekąski.</p>
                 </article>
 
                 <article class="category-card">
-                    <div class="card-icon" aria-hidden="true">🍷</div>
-                    <h3>Alkohole i napoje</h3>
-                    <p>
-                        Bogato zaopatrzony dział napojów i trunków na spotkania ze znajomymi, imprezy okolicznościowe lub wieczorny relaks. Proponujemy piwa kraftowe i regionalne, wina oraz alkohole mocne.
-                    </p>
-                    <ul class="category-list">
-                        <li>Piwa regionalne, kraftowe i bezalkoholowe</li>
-                        <li>Wina wytrawne, półsłodkie i musujące</li>
-                        <li>Likiery, wódki i alkohole premium</li>
-                    </ul>
+                    <h3>Alkohole</h3>
+                    <p>Wybór napojów alkoholowych na różne okazje i spotkania towarzyskie.</p>
                 </article>
 
                 <article class="category-card">
-                    <div class="card-icon" aria-hidden="true">💨</div>
                     <h3>Wyroby tytoniowe</h3>
-                    <p>
-                        Pełna gama tradycyjnych i nowoczesnych wyrobów tytoniowych, e-papierosów, podgrzewaczy tytoniu, wkładów oraz niezbędnych akcesoriów dla osób pełnoletnich.
-                    </p>
-                    <ul class="category-list">
-                        <li>Papierosy tradycyjne i cygaretki</li>
-                        <li>Wkłady tytoniowe do podgrzewaczy</li>
-                        <li>Zapalniczki, akcesoria i gilzy</li>
-                    </ul>
+                    <p>W ofercie dostępne są również wyroby tytoniowe oraz akcesoria.</p>
                 </article>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="kontakt" class="info-section contact-section" aria-labelledby="contact-title">
+        <section id="kontakt" class="info-section contact-section">
             <div class="section-heading">
-                <p class="eyebrow">Masz pytania? Skontaktuj się</p>
-                <h2 id="contact-title">Dane kontaktowe</h2>
-                <p class="section-lead">Jesteśmy do Twojej dyspozycji telefonicznie i na miejscu w sklepie.</p>
+                <p class="eyebrow">Kontakt</p>
+                <h2>Skontaktuj się z nami</h2>
             </div>
 
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon" aria-hidden="true">📞</div>
-                    <div class="contact-card-content">
-                        <span class="contact-label">Numer telefonu</span>
-                        <a href="tel:+48757182182" class="contact-value highlight">+48 75 718 21 82</a>
-                        <small>Zadzwoń i zapytaj o dostępność towaru</small>
-                    </div>
+            <div class="contact-details">
+                <div>
+                    <span>Telefon</span>
+                    <a href="tel:+48757182182">+48 75 718 21 82</a>
                 </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon" aria-hidden="true">✉️</div>
-                    <div class="contact-card-content">
-                        <span class="contact-label">Adres e-mail</span>
-                        <a href="mailto:kontakt@groszekkowary.pl" class="contact-value highlight">kontakt@groszekkowary.pl</a>
-                        <small>Odpowiadamy w dni robocze</small>
-                    </div>
+                <div>
+                    <span>Email</span>
+                    <a href="mailto:kontakt@groszekkowary.pl">kontakt@groszekkowary.pl</a>
                 </div>
-
-                <div class="contact-card contact-hours-card">
-                    <div class="contact-icon" aria-hidden="true">⏰</div>
-                    <div class="contact-card-content">
-                        <span class="contact-label">Godziny otwarcia</span>
-                        <ul class="hours-list">
-                            <li><span>Poniedziałek – Piątek:</span> <strong>06:00 – 21:00</strong></li>
-                            <li><span>Sobota:</span> <strong>06:30 – 20:00</strong></li>
-                            <li><span>Niedziele handlowe:</span> <strong>09:00 – 17:00</strong></li>
-                        </ul>
-                    </div>
+                <div>
+                    <span>Godziny otwarcia</span>
+                    <p>Pon.–pt. 06:00–20:00<br>Sob. 07:00–18:00</p>
                 </div>
             </div>
         </section>
 
-        <!-- Location Section -->
-        <section id="lokalizacja" class="info-section location-section" aria-labelledby="location-title">
+        <section id="lokalizacja" class="location-section">
             <div class="section-heading">
-                <p class="eyebrow">Jak do nas trafić?</p>
-                <h2 id="location-title">Lokalizacja sklepu</h2>
-                <p class="section-lead">Znajdziesz nas w dogodnym punkcie Kowar — łatwy dojazd i wygodne zakupy.</p>
+                <p class="eyebrow">Lokalizacja</p>
+                <h2>Kowary 58-530, Pocztowa 6</h2>
             </div>
 
-            <div class="location-wrapper">
-                <div class="location-info-box">
-                    <div class="location-pin" aria-hidden="true">📍</div>
-                    <h3>Sklep Groszek w Kowarach</h3>
-                    <address class="store-address">
-                        ul. Pocztowa 6<br>
-                        58-530 Kowary
-                    </address>
-                    <p class="location-notes">
-                        Sklep mieści się w centralnej części miejscowości, w bezpośrednim sąsiedztwie głównych traktów spacerowych i komunikacyjnych.
-                    </p>
-                    <div class="location-actions">
-                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Pocztowa+6%2C+58-530+Kowary" target="_blank" rel="noopener noreferrer" class="button button-primary">
-                            Otwórz w Google Maps <span aria-hidden="true">↗</span>
-                        </a>
-                        <a href="tel:+48757182182" class="button button-secondary">
-                            Zadzwoń do sklepu <span aria-hidden="true">📞</span>
-                        </a>
-                    </div>
-                </div>
+            <p>
+                Odwiedź nas w centrum Kowar. Sklep Groszek znajduje się przy ul. Pocztowej 6,
+                w dogodnej lokalizacji dla mieszkańców i przejezdnych.
+            </p>
 
-                <div class="location-map-card">
-                    <!-- Stylized interactive map preview container -->
-                    <div class="map-placeholder" aria-label="Mapa lokalizacji ul. Pocztowa 6, 58-530 Kowary">
-                        <iframe
-                            title="Mapa lokalizacji Sklep Groszek Kowary"
-                            src="https://www.openstreetmap.org/export/embed.html?bbox=15.825%2C50.785%2C15.845%2C50.795&amp;layer=mapnik&amp;marker=50.7905%2C15.8350"
-                            width="100%"
-                            height="100%"
-                            loading="lazy"
-                            style="border:0;"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="map-footer-label">
-                        <span>Pocztowa 6, 58-530 Kowary</span>
-                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Pocztowa+6%2C+58-530+Kowary" target="_blank" rel="noopener noreferrer">Powiększ mapę ↗</a>
-                    </div>
-                </div>
-            </div>
+            <a
+                class="button secondary"
+                href="https://www.google.com/maps/search/?api=1&query=Pocztowa+6%2C+58-530+Kowary"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Pokaż na mapie <span aria-hidden="true">↗</span>
+            </a>
         </section>
     </main>
 
     <footer class="main-footer">
-        <div class="footer-inner">
-            <div class="footer-brand">
-                <a class="footer-logo" href="#start" aria-label="Groszek — powrót na początek">
-                    <span class="logo-dot" aria-hidden="true"></span>
-                    <span class="logo-text">Groszek</span>
-                </a>
-                <p class="footer-slogan">Twój zaufany sklep w Kowarach przy ul. Pocztowej 6.</p>
-            </div>
-
-            <div class="footer-links">
-                <a href="#o-nas">O nas</a>
-                <a href="#oferta">Oferta</a>
-                <a href="#kontakt">Kontakt</a>
-                <a href="#lokalizacja">Lokalizacja</a>
-            </div>
-
-            <div class="footer-copyright">
-                <p>&copy; 2026 Sklep Groszek Kowary. Wszelkie prawa zastrzeżone.</p>
-            </div>
-        </div>
+        <p>&copy; 2026 Sklep Groszek Kowary</p>
     </footer>
-
-    <script>
-        // Close details dropdown when a navigation link is clicked
-        document.querySelectorAll('.main-nav a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                var menu = document.querySelector('header .menu');
-                if (menu && menu.hasAttribute('open')) {
-                    menu.removeAttribute('open');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
