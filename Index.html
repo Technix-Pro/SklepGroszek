@@ -3,37 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Przykładowa strona sklepu Groszek w Kowarach.">
+    <meta name="description" content="Oficjalna strona Sklepu Groszek w Kowarach. Świeże pieczywo, alkohole, wyroby tytoniowe i artykuły spożywcze.">
     <title>Sklep Groszek - Kowary</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Witamy w sklepie Groszek w Kowarach!</h1>
-        <nav>
+    <header class="main-header">
+        <div class="logo-container">
+            <span class="logo-dot"></span>
+            <span class="logo-text">groszek</span>
+        </div>
+        <nav class="main-nav">
             <ul>
                 <li><a href="#o-nas">O nas</a></li>
-                <li><a href="#oferta">Nasza oferta</a></li>
+                <li><a href="#oferta">Oferta</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="o-nas">
-            <h2>O nas</h2>
-            <p>To jest przykładowy akapit o sklepie.</p>
+    <section class="hero-banner">
+        <img src="header.jpg" alt="Fasada Sklepu Groszek w Kowarach" class="hero-image">
+    </section>
+
+    <main class="content-container">
+        <section id="o-nas" class="info-section">
+            <h2>O naszym sklepie</h2>
+            <p>Zapraszamy do naszego sklepu w Kowarach przy ul. Pocztowej 6. Oferujemy miłą obsługę, szeroki asortyment oraz codzienne dostawy świeżych produktów.</p>
         </section>
 
-        <section id="oferta">
+        <section id="oferta" class="info-section">
             <h2>Nasza oferta</h2>
-            <p>Tutaj możesz opisać swoje produkty i usługi.</p>
+            <div class="product-categories">
+                <article class="category-card">
+                    <h3>Świeże Pieczywo</h3>
+                    <p>Codzienne dostawy chrupiącego pieczywa z lokalnych piekarni.</p>
+                </article>
+                <article class="category-card">
+                    <h3>Alkohole i Napoje</h3>
+                    <p>Szeroki wybór piw, win i alkoholi wysokoprocentowych w atrakcyjnych cenach.</p>
+                </article>
+                <article class="category-card">
+                    <h3>Wyroby Tytoniowe</h3>
+                    <p>Pełny asortyment papierosów, tytoni i akcesoriów.</p>
+                </article>
+                <article class="category-card">
+                    <h3>Artykuły Spożywcze</h3>
+                    <p>Wędliny, nabiał, świeże warzywa i owoce oraz artykuły pierwszej potrzeby.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="kontakt" class="info-section">
+            <h2>Kontakt i Godziny Otwarcia</h2>
+            <div class="contact-details">
+                <p><strong>Adres:</strong> ul. Pocztowa 6, Kowary</p>
+                <p><strong>Telefon:</strong> <a href="tel:+48757182182">+48 75 718 21 82</a></p>
+                <p><strong>Godziny otwarcia:</strong> Poniedziałek – Piątek: 06:00 – 20:00, Sobota: 07:00 – 18:00</p>
+            </div>
         </section>
     </main>
 
-    <footer id="kontakt">
+    <footer class="main-footer">
         <p>&copy; 2026 Sklep Groszek Kowary. Wszelkie prawa zastrzeżone.</p>
     </footer>
 </body>
 </html>
-
